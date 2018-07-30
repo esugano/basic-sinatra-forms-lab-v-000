@@ -1,7 +1,7 @@
 require 'sinatra/base'
 
 class App < Sinatra::Base
-  
+
  get "/newteam" do
    erb :newteam
  end
@@ -11,7 +11,7 @@ class App < Sinatra::Base
    @params = params.each do |key, value|
               @key = key
               @value = value
-            end 
+            end
 
    erb :team
  end
