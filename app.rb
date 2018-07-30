@@ -7,7 +7,7 @@ class App < Sinatra::Base
  end
 
 
- post "/team" do
+ post "/newteam" do
    @params = params.each do |key, value|
      @key = key
      @value = value
