@@ -8,11 +8,6 @@ class App < Sinatra::Base
 
 
  post "/newteam" do
-   @params = params.each do |key, value|
-     @key = key
-     @value = value
-   end
-   puts @params[:name]
    erb :team
  end
 
