@@ -12,7 +12,7 @@ class App < Sinatra::Base
      @key = key
      @value = value
    end
-   puts params[:name]
+   puts @params[:name]
    erb :team
  end
 
